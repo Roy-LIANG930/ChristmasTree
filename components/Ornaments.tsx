@@ -281,13 +281,11 @@ const Polaroid: React.FC<{
       
       {/* Photo Image Layer */}
       <mesh position={[0, 0.1, 0.011]}> 
-        <planeGeometry args={[0.7, 0.75]} />
-        <meshStandardMaterial 
+        <planeGeometry args={[0.72, 0.54]} />
+        <meshBasicMaterial 
             map={texture} 
-            roughness={0.2} 
-            metalness={0.1}
-            envMapIntensity={1.5}
-            color={selectedPhotoIndex !== null && selectedPhotoIndex !== index ? "#444444" : "#ffffff"} // Dim if others selected
+            toneMapped={false}
+            color={selectedPhotoIndex !== null && selectedPhotoIndex !== index ? "#444444" : "#ffffff"}
         />
       </mesh>
     </group>
