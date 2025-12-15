@@ -1,0 +1,7 @@
+{
+  "name": "榴莲&咪宝的圣诞树",
+  "description": "A high-fidelity, interactive 3D luxury Christmas tree experience featuring opulent visuals and magical transitions.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
